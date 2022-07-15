@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loganland password verification</title>
+	<script type="text/javascript">
+		function checkpassword() {
+			var password = document.getElementById("passwordbox");
+			var passwordText= password.value;
+			if(passwordText== "3792") {
+				return true;
+			}
+			else{
+
+				alert("ERROR: access key inncorrect make sure you get the password provided by the founder of loganland");
+				return false;
+			}
+		}
+	</script>
+	<style type="text/css">
+		p {color: #0000ff;
+			text-decoration: blink;
+			text-align: left;
+			background: rgb(22 22 22);
+			padding: 5px
+
+		}
+	section.password {background-image: url(images/fire.jpg); }
+	</style>
+</head>
+<body>
+
+<section class="password"><p style="font-size: 50px">user input required</p>
+<p>new user detected please use password provided by the founder of loganland</p>
+<p>please enter the access code: <input id="passwordbox" type="password"></p>
+<button><a href="loganland.html" onclick="return checkpassword();">authorize access</a></button>
+</section>
+</body>
+</html>
